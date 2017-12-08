@@ -15,10 +15,10 @@
 
 
  ## APP效果截图：
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/aaa.gif)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/bbb.gif)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/ccc.gif)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/ddd.gif)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/aa.gif)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/bb.gif)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/cc.gif)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/dd.gif)
 
  
  [我的博客](http://www.cnblogs.com/xqxacm/)
