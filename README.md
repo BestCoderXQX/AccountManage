@@ -1,4 +1,4 @@
-# AccountManage
+# 密码空间
 账号密码管理APP
 
 
@@ -15,10 +15,10 @@
 
 
  ## APP效果截图：
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/aa.png){:height="50%" width="50%"}
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/bb.png){:height="50%" width="50%"}
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/cc.png){:height="50%" width="50%"}
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/dd.png){:height="50%" width="50%"}
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/a1.png)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/b1.png)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/c1.png)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/d1.png)
 
  
- [我的博客:听着music睡](http://www.cnblogs.com/xqxacm/)
+ [我的博客: 听着music睡](http://www.cnblogs.com/xqxacm/)
