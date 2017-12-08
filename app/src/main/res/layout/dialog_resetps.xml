@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corner_bg"
+    android:id="@+id/root"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerInParent="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_p_cancel"
+            android:padding="@dimen/dp_10"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="请输入登录密码"
+        android:textColor="@color/standard_black_main"
+        android:shadowColor="#33000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:layout_marginTop="@dimen/dp_8"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_alignParentBottom="true"
+        android:minHeight="@dimen/dp_40"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint=""
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_50"
+            android:textSize="@dimen/txt_12"
+            android:textColor="@color/standard_black_3"
+            android:background="@drawable/bg_edit"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:src="@mipmap/icon_password"
+            android:padding="@dimen/dp_6"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+    <!--保存 取消按钮  当编辑状态下会显示-->
+    <LinearLayout
+        android:id="@+id/lyButtonEdit"
+        android:layout_width="260dp"
+        android:layout_height="@dimen/dp_34"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:textColor="@color/standard_black_main"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/txt_12"
+            />
+
+
+        <TextView
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/txt_12"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:background="@drawable/dialog_corner_bg_bottom_green"
+            />
+    </LinearLayout>
+
+</LinearLayout>

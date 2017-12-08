@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_admin_ps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/standard_bg"
+    tools:context="acffo.xqx.accountmanage.ui.main.SetAdminPsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_16"
+            android:layout_centerInParent="true"
+            android:textColor="@color/standard_black_main"
+            android:text="设置深层保护密码"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/standard_line"
+        ></View>
+    <EditText
+        android:id="@+id/editPS"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_edit_admin"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="请输入深层密码密码"
+        android:textSize="@dimen/txt_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:singleLine="true"
+        android:paddingRight="@dimen/dp_16"
+
+        />
+
+    <EditText
+        android:id="@+id/editPsConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_edit_admin"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="确认密码"
+        android:textSize="@dimen/txt_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:singleLine="true"
+        android:paddingRight="@dimen/dp_16"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:text="请牢记深层保护密码，密码丢失不可找回！\n 建议不要和登录密码一致！"
+        android:textSize="@dimen/txt_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="right"
+        android:layout_margin="@dimen/dp_26"
+        />
+    <TextView
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="完成"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_over"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        />
+
+</LinearLayout>

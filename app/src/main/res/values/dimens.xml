@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_34">34dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_38">38dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_42">42dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_46">46dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+
+
+    <dimen name="txt_8">8sp</dimen>
+    <dimen name="txt_10">10sp</dimen>
+    <dimen name="txt_12">12sp</dimen>
+    <dimen name="txt_14">14sp</dimen>
+    <dimen name="txt_16">16sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
+    <dimen name="txt_20">20sp</dimen>
+    <dimen name="txt_22">22sp</dimen>
+    <dimen name="txt_24">24sp</dimen>
+    <dimen name="txt_26">26sp</dimen>
+    <dimen name="txt_28">28sp</dimen>
+    <dimen name="txt_30">30sp</dimen>
+    <dimen name="txt_32">32sp</dimen>
+    <dimen name="txt_34">34sp</dimen>
+    <dimen name="txt_36">36sp</dimen>
+    <dimen name="txt_38">38sp</dimen>
+    <dimen name="txt_40">40sp</dimen>
+    <dimen name="txt_42">42sp</dimen>
+    <dimen name="txt_44">44sp</dimen>
+    <dimen name="txt_46">46sp</dimen>
+    <dimen name="txt_48">48sp</dimen>
+</resources>

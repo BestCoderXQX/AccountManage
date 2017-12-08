@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/btnSetting"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting"
+            android:padding="@dimen/dp_10"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/mainoranger"
+            android:shadowColor="#33000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:layout_marginTop="@dimen/dp_8"
+            />
+        <ImageView
+            android:id="@+id/btnSelect"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_select"
+            android:padding="@dimen/dp_10"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/standard_line"></View>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/dp_20"
+            android:src="@mipmap/icon_add"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
+

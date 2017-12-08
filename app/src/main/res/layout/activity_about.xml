@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/txt_16"
+            android:background="#0000"
+            android:src="@mipmap/icon_back"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于"
+            android:textColor="@color/standard_black_main"
+            android:textSize="@dimen/txt_18"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/standard_line"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码空间 V1.0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/standard_line"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            ></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发者: acffo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:textSize="@dimen/txt_16"
+            android:shadowColor="@color/standard_black_main"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系邮箱: djlxqx@163.com"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:textSize="@dimen/txt_16"
+            android:shadowColor="@color/standard_black_main"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

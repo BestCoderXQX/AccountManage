@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e2e2e2</color>
+    <color name="colorPrimaryDark">#e2e2e2</color>
+    <color name="colorAccent">#30c5ff</color>
+
+    <color name="mainColor">#30c5ff</color>
+    <color name="mainoranger">#fcaa3c</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="email_bg_1">#f8e2b3</color>
+
+    <color name="label_lift">#ffa28d</color>
+    <color name="label_family">#e2201a</color>
+    <color name="label_friend">#fdbf01</color>
+    <color name="label_love">#de525c</color>
+    <color name="label_younth">#00b050</color>
+    <color name="label_promise">#00b0f0</color>
+    <color name="green">#82ce34</color>
+
+    <color name="grey_bg">#f2f2f2</color>
+    <color name="grey_5">#e2e2e2</color>
+    <color name="grey_1">#6e7678</color>
+    <color name="grey_2">#5d5d5d</color>
+    <color name="txtColor">#3d3d3d</color>
+    <color name="grey_4">#626262</color>
+    <color name="grey_6">#faf9f9</color>
+    <color name="line_blue_1">#91a4c1</color>
+
+    <color name="line_blue_2">#009dd9</color>
+    <color name="line_blue_3">#91a4c1</color>
+    <color name="line_blue_4">#60c2e8</color>
+    <color name="blue_main">#4ab8e9</color>
+
+    <color name="standard_bg">#f5f5f5</color>
+    <color name="standard_black_main">#444</color>
+    <color name="standard_black_2">#666</color>
+    <color name="standard_black_3">#888</color>
+    <color name="standard_black_4">#999</color>
+    <color name="standard_black_1">#a3a7b6</color>
+    <color name="standard_black_tip">#cfd5da</color>
+    <color name="standard_blue">#00aaff</color>
+    <color name="standard_line">#66cfd5da</color>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_more"
+    android:gravity="center"
+    android:id="@+id/ly_popup"
+    android:layout_gravity="right"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    >
+
+    <TextView
+        android:id="@+id/btnTimeAscend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="按创建时间升序"
+        android:gravity="center"
+        android:textSize="@dimen/txt_12"
+        android:textColor="@color/standard_black_main"
+        />
+
+    <TextView
+        android:id="@+id/btnTimeDescend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="按创建时间降序"
+        android:gravity="center"
+        android:textSize="@dimen/txt_12"
+        android:textColor="@color/standard_black_main"
+        />
+
+    <TextView
+        android:id="@+id/btnNameAscend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="按标题拼音升序"
+        android:gravity="center"
+        android:textSize="@dimen/txt_12"
+        android:textColor="@color/standard_black_main"
+        />
+
+    <TextView
+        android:id="@+id/btnNameDescend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="按标题拼音降序"
+        android:gravity="center"
+        android:textSize="@dimen/txt_12"
+        android:textColor="@color/standard_black_main"
+        />
+</LinearLayout>
