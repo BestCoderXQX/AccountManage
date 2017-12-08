@@ -15,10 +15,10 @@
 
 
  ## APP效果截图：
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/aa.png = 360*640)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/bb.png = 360*640)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/cc.png = 360*640)
- ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/dd.png = 360*640)
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/aa.png){:height="50%" width="50%"}
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/bb.png){:height="50%" width="50%"}
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/cc.png){:height="50%" width="50%"}
+ ![image](https://github.com/BestCoderXQX/AccountManage/raw/master/screenshots/dd.png){:height="50%" width="50%"}
 
  
  [我的博客:听着music睡](http://www.cnblogs.com/xqxacm/)
