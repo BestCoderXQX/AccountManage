@@ -1,6 +1,6 @@
 # 密码空间
 账号密码管理APP [APK下载](https://pan.baidu.com/s/1kUE1KO3)
-
+注：个人APP 仅供学习 ，不可用于商业用途。
 
 
  ## 功能描述：<br>
@@ -22,3 +22,4 @@
 
  
  [我的博客: 听着music睡](http://www.cnblogs.com/xqxacm/)
+
