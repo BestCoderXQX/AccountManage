@@ -5,7 +5,11 @@ import android.app.Application;
 import com.raizlabs.android.dbflow.config.FlowManager;
 
 /**
- * Created by 徐启鑫 on 2017/11/23.
+ * @author xqx
+ * @email djlxqx@163.com
+ * blog:http://www.cnblogs.com/xqxacm/
+ * createAt 2017/11/29
+ * description: acffo 个人APP 开源 版权所有，仅供学习！
  */
 
 public class XApplication extends Application{
