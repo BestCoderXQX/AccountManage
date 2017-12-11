@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="acffo.xqx.accountmanage.ui.addAccount.SelectAppActivity">
+    tools:context="acffo.xqx.accountmanageacffo.ui.addAccount.SelectAppActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

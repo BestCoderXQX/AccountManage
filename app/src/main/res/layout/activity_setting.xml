@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="acffo.xqx.accountmanage.ui.main.SettingActivity">
+    tools:context="acffo.xqx.accountmanageacffo.ui.main.SettingActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -50,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="密码空间 V1.0"
+            android:text="账号密橱 V1.1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="110dp"
             />

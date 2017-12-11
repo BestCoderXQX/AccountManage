@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/standard_bg"
-    tools:context="acffo.xqx.accountmanage.ui.main.EnterMainActivity">
+    tools:context="acffo.xqx.accountmanageacffo.ui.main.EnterMainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
