@@ -16,6 +16,7 @@ import acffo.xqx.accountmanageacffo.base.activity.BaseActivity;
 import acffo.xqx.accountmanageacffo.base.database.DeepGuardEntity;
 import acffo.xqx.accountmanageacffo.base.dialog.DeepGuardValidationSettingDialog;
 import acffo.xqx.accountmanageacffo.base.dialog.ResetPsDialog;
+import acffo.xqx.accountmanageacffo.base.utils.AlipayUtil;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -39,7 +40,9 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
     RelativeLayout btnArk;
     @Bind(R.id.btnSetDeepGuardPs)
     RelativeLayout btnSetDeepGuardPs;   // 修改深层保护密码
-    List<DeepGuardEntity> deepGuardPs ;// 深层保护数据库中密码
+    List<DeepGuardEntity> deepGuardPs;// 深层保护数据库中密码
+    @Bind(R.id.btnM)
+    RelativeLayout btnM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         btnAbout.setOnClickListener(this);
         btnArk.setOnClickListener(this);
         btnSetDeepGuardPs.setOnClickListener(this);
+        btnM.setOnClickListener(this);
     }
 
     @Override
@@ -89,11 +93,11 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                     }
                 }
                 DeepGuardValidationSettingDialog.Builder deepGuardbuilder = new DeepGuardValidationSettingDialog.Builder();
-                deepGuardbuilder.create(this ,1 );  // 1、代表进入深层保护列表 2、代表修改深层保护密码
+                deepGuardbuilder.create(this, 1);  // 1、代表进入深层保护列表 2、代表修改深层保护密码
                 break;
             case R.id.btnAbout:
                 // 关于作者
-                startActivity(new Intent(this,AboutActivity.class));
+                startActivity(new Intent(this, AboutActivity.class));
                 break;
             case R.id.btnSetDeepGuardPs:
                 // 修改深层保护密码
@@ -108,7 +112,14 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                     }
                 }
                 DeepGuardValidationSettingDialog.Builder deepGuardbuilderReset = new DeepGuardValidationSettingDialog.Builder();
-                deepGuardbuilderReset.create(this ,2 );// 1、代表进入深层保护列表 2、代表修改深层保护密码
+                deepGuardbuilderReset.create(this, 2);// 1、代表进入深层保护列表 2、代表修改深层保护密码
+                break;
+            case R.id.btnM:
+                if (AlipayUtil.hasInstalledAlipayClient(this)){
+                    AlipayUtil.startAlipayClient(this,"FKX01450PAGAZKMGVIK3FA");
+                }else{
+                    TastyToast.makeText(this, "未检测到支付宝，无法实现打赏功能", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING);
+                }
                 break;
         }
     }

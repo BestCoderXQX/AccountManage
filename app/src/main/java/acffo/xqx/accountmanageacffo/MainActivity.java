@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -34,6 +35,7 @@ import acffo.xqx.accountmanageacffo.base.utils.PinyinUtils;
 import acffo.xqx.accountmanageacffo.ui.addAccount.AddAccountActivity;
 import acffo.xqx.accountmanageacffo.ui.main.SetDeepGuardPSActivity;
 import acffo.xqx.accountmanageacffo.ui.main.SettingActivity;
+import acffo.xqx.accountmanageacffo.ui.search.SearchActivity;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import de.greenrobot.event.EventBus;
@@ -57,6 +59,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     ImageView btnSelect;
     @Bind(R.id.btnSetting)
     ImageView btnMenu;
+    @Bind(R.id.btnSearch)
+    RelativeLayout btnSearch;
     ;
 
     private ArrayList<Account> datas;
@@ -86,8 +90,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initVariables();
         initView();
         initEvent();
-        initData();
         EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initData();
     }
 
     private void initVariables() {
@@ -99,13 +108,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         List<Account> accountList = SQLite.select().from(Account.class).queryList();
         adapter.addData(accountList);
         adapter.notifyDataSetChanged();
-
+        showSearchLy();
     }
+
+
 
     private void initEvent() {
         btnAdd.setOnClickListener(this);
         btnSelect.setOnClickListener(this);
         btnMenu.setOnClickListener(this);
+        btnSearch.setOnClickListener(this);
     }
 
     private void initView() {
@@ -123,14 +135,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                     // 判断是否设置了,没有则先设置
 
                     List<DeepGuardEntity> deepGuardPs = SQLite.select().from(DeepGuardEntity.class).queryList();
-                    if (deepGuardPs.size()==0){
+                    if (deepGuardPs.size() == 0) {
                         TastyToast.makeText(MainActivity.this, "未设置深层保护密码，请先设置！", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING);
                         startActivity(new Intent(MainActivity.this, SetDeepGuardPSActivity.class));
-                        return ;
+                        return;
                     }
                     DeepGuardValidationMainDialog.Builder deepGuardBuilder = new DeepGuardValidationMainDialog.Builder();
-                    deepGuardBuilder.create(MainActivity.this , adapter.getData().get(position));
-                }else {
+                    deepGuardBuilder.create(MainActivity.this, adapter.getData().get(position));
+                } else {
                     // 该账号信息不再深层保护列表里 ，直接打开
                     final AccountInfoDialog.Builder builder = new AccountInfoDialog.Builder();
                     builder.create(MainActivity.this, adapter.getItem(position));
@@ -162,6 +174,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                                 // 删除成功
                                 adapter.remove(position);
                                 TastyToast.makeText(getApplicationContext(), "删除成功!", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS);
+                                showSearchLy();
                             } else {
                                 // 删除失败
                                 TastyToast.makeText(getApplicationContext(), "删除失败!", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING);
@@ -209,6 +222,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.btnSetting:
                 // 打开设置界面
                 startActivity(new Intent(this, SettingActivity.class));
+                break;
+            case R.id.btnSearch:
+                // 搜索
+                startActivity(new Intent(this , SearchActivity.class));
                 break;
         }
     }
@@ -267,15 +284,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     /**
      * 添加新的账号信息  收到的消息 为Account对象
+     *
      * @param event
      */
     public void onEventMainThread(AddAccount event) {
         adapter.addData(event.getAccount());
+        showSearchLy();
     }
 
 
     /**
      * 修改了深层保护列表，则重新冲数据库中获取到最新的。
+     *
      * @param event
      */
     public void onEventMainThread(UpdataMainListEventbus event) {
@@ -316,4 +336,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         lastBackTime = currentTime;
     }
 
+    /**
+     * 根据item数量来决定是否显示搜索框，当数量多于25条的时候显示
+     */
+    public void showSearchLy(){
+        if (adapter.getData().size()>25){
+            btnSearch.setVisibility(View.VISIBLE);
+        }else{
+            btnSearch.setVisibility(View.GONE);
+        }
+    }
 }

@@ -121,9 +121,7 @@
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_0.5"
-        android:layout_marginLeft="@dimen/dp_16"
-        android:layout_marginRight="@dimen/dp_16"
+        android:layout_height="@dimen/dp_12"
         android:background="@color/standard_line"></View>
 
     <RelativeLayout
@@ -145,6 +143,37 @@
             android:text="关于"
             android:layout_centerVertical="true"
             android:layout_marginLeft="52dp"
+            android:textColor="@color/standard_black_main"
+            android:textSize="@dimen/txt_16"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/standard_line"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/btnM"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        >
+        <ImageView
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:src="@mipmap/icon_money"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打赏"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="54dp"
             android:textColor="@color/standard_black_main"
             android:textSize="@dimen/txt_16"
             />

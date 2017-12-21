@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="acffo.xqx.accountmanageacffo.ui.search.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:singleLine="true"
+            android:hint="请输入标题"
+            android:textSize="@dimen/txt_12"
+            android:paddingLeft="@dimen/dp_14"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_search"
+            android:padding="@dimen/dp_6"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/standard_line"
+        ></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

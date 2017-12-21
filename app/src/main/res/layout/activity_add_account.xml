@@ -54,6 +54,7 @@
                 android:textColorHint="@color/white"
                 android:theme="@style/MyEditText"
                 android:textCursorDrawable="@drawable/edittextbg"
+                android:singleLine="true"
                 />
 
             <TextView
